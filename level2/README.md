@@ -1,6 +1,5 @@
-# This is the Level 1 exercice. I did it in PHP, because I don't know Ruby...
-	But I will learn it...
-	I used OOP.
+# NOW This is the Level 2 exercice. I made it in PHP,
+	It was COOL, too many loops
 
 	If you have some questions :
 	-> contact@smaine.me
@@ -17,14 +16,16 @@ Here is our plan:
 - let any person (let's call her 'driver') book a car for given dates/distance
 
 
-# Level 1
+# Level 2
 
-The car owner chooses a price per day and price per km for her car.
-The driver then books the car for a given period and an approximate distance.
+To be as competitive as possible, we decide to have a decreasing pricing for longer rentals.
 
-The rental price is the sum of:
-- a time component: the number of rental days multiplied by the car's price per day
-- a distance component: the number of km multiplied by the car's price per km
+New rules:
+
+price per day decreases by 10% after 1 day
+price per day decreases by 30% after 4 days
+price per day decreases by 50% after 10 days
+Adapt the rental price computation to take these new rules into account
 
 Write code that generates `output.json` from `data.json`
 

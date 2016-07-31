@@ -1,6 +1,13 @@
 <?php
+
+require 'percent.php';
+
+
 class rent_car{
 	
+
+	use Percent;
+
 	private $id;
 	private $car_id;
 	private $start_date;
@@ -17,13 +24,8 @@ class rent_car{
 	private $total_b, $total_c;
 	private $finalPrice;
 
-//function to calculate percentage
 
-	private function percentage($amount, $decrease) {
 
-	 $result = $amount * $decrease / 100;
-	 return $amount - $result;
-}
 
 function decrease(){
 
